@@ -12,19 +12,21 @@
     <div id="app">
        <h1 class="text-center mt-3">{{title}}</h1>
        <div class="container mt-2">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-6 d-flex justify-content-end g-5">
-                <img :src="image_left" class="img-fluid w-75">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 d-flex justify-content-end g-5">
+                    <img :src="image_left" class="img-fluid w-75">
+                </div>
+                <div class="col-6 d-flex justify-content-start g-5">
+                    <img :src="image_right" class="img-fluid w-75">
+                </div>
+                <div class="col-12 d-flex justify-content-center gy-5">
+                    <img :src="image_down" class="img-fluid w-75">
+                </div>
             </div>
-            <div class="col-6 d-flex justify-content-start g-5">
-                <img :src="image_right" class="img-fluid w-75">
+            <div class="copyright text-center mt-5">
+                <span>{{copyright}}</span>
             </div>
-           <div class="col-12 d-flex justify-content-center gy-5">
-            <img :src="image_down" class="img-fluid w-75">
-           </div>
-           <span class="text-center mt-5">{{copyright}}</span>
-        </div>
-        
+       </div>
     </div>
     
 
